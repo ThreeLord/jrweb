@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load functionTag %}
+{% block topAd %}
+ <img src="/static/img/banner_product.jpg" width="1200" height="300" />
+{% endblock %}
+
+{% block main %}
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="193" align="left" valign="top">
+            {%display_product_category_widget%}
+          </td>
+          <td width="470" valign="top">
+          <table width="740px" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><b>{{catname}}</b></td>
+            </tr>
+            <tr>
+              <td background="/static/img/dot_white.gif"><img src="/static/img/blank.gif" width="1000" height="1" /></td>
+            </tr>
+            <tr>
+              <td width="150px" class="content">              
+                {%for item in products%}
+					<table border="0" width="1000" height="200" style="BORDER-RIGHT: 1px ; BORDER-TOP: 1px ; BORDER-LEFT:  1px ; BORDER-BOTTOM: 1px dashed">
+						<td>
+						<img src="{{item.product_pic|safe}}" width="300" height="200" align="left" style="margin-top:7px" />
+						</td>
+						<td width="800" height="200">
+						{{item.product_full_desc|safe}} 
+						</td>
+					</table>   
+                {%endfor%}
+              </td>
+            </tr>
+            
+          </table></td>
+         
+        </tr>
+    </table> 
+{% endblock %}

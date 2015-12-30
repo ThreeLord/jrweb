@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block topAd %}
+	<img src="/static/img/banner_index.png" width="1200" height="300" />
+{% endblock %}
+{% load functionTag %}
+{% block main %}
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+       <td width="239" align="left" valign="top" style="padding-left:12px;">
+       <table width="203" border="0" cellspacing="0" cellpadding="0" style="margin-bottom:14px;">
+           <tr>
+             <td><img src="/static/img/main/header_news.gif" width="203" height="45" /></td>
+           </tr>
+           {% display_index_announce_widget %}
+           <tr>
+             <td><img src="/static/img/main/footer.gif" width="203" height="9" /></td>
+           </tr>
+       </table>
+       {%display_index_recent_faqs%}
+       </td>
+       <td width="426" valign="top">
+	       {%display_index_news_widget%}
+       </td>
+       <td width="290" align="right" valign="top" class="ourproducts">
+        {% display_products_widget %}
+       </td>
+     </tr>
+ </table>
+{% endblock %}
+<script src="/static/js/scrollPic.js"></script>
+<script>
+window.onload = function(){
+    scrollPic();
+}
+function scrollPic() {
+    var scrollPic = new ScrollPic();
+    scrollPic.scrollContId   = "scrollPic"; //内容容器ID
+    scrollPic.arrLeftId      = "LeftArr";//左箭头ID
+    scrollPic.arrRightId     = "RightArr"; //右箭头ID
+
+    scrollPic.frameWidth     = 312;//显示框宽度
+    scrollPic.pageWidth      = 104; //翻页宽度
+
+    scrollPic.speed          = 10; //移动速度(单位毫秒，越小越快)
+    scrollPic.space          = 10; //每次移动像素(单位px，越大越快)
+    scrollPic.autoPlay       = true; //自动播放
+    scrollPic.autoPlayTime   = 3; //自动播放间隔时间(秒)
+
+    scrollPic.initialize(); //初始化
+}
+</script>

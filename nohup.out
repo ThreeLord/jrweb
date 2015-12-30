@@ -1,0 +1,93 @@
+/opt/jrweb/jrweb/urls.py:9: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got index). Pass the callable instead.
+  url(r'^$', 'index'),
+
+/opt/jrweb/jrweb/urls.py:10: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got faq). Pass the callable instead.
+  url(r'^faq$', 'faq'),
+
+/opt/jrweb/jrweb/urls.py:11: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got faq_cat_detail). Pass the callable instead.
+  url(r'^faq/(?P<catid>\d{1,15})$', 'faq_cat_detail'),
+
+/opt/jrweb/jrweb/urls.py:12: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got about). Pass the callable instead.
+  url(r'^about$', 'about'),
+
+/opt/jrweb/jrweb/urls.py:13: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got about_cat_detail). Pass the callable instead.
+  url(r'^about/(?P<catid>\d{1,15})$', 'about_cat_detail'),
+
+/opt/jrweb/jrweb/urls.py:14: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got service). Pass the callable instead.
+  url(r'^service$', 'service'),
+
+/opt/jrweb/jrweb/urls.py:15: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got service_cat_detail). Pass the callable instead.
+  url(r'^service/(?P<catid>\d{1,15})$', 'service_cat_detail'),
+
+/opt/jrweb/jrweb/urls.py:16: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got products). Pass the callable instead.
+  url(r'^product$', 'products'),
+
+/opt/jrweb/jrweb/urls.py:17: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got product_cat_detail). Pass the callable instead.
+  url(r'^product/(?P<catid>\d{1,15})$', 'product_cat_detail'),
+
+/opt/jrweb/jrweb/urls.py:18: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got download). Pass the callable instead.
+  url(r'^download$', 'download'),
+
+/opt/jrweb/jrweb/urls.py:19: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got download_cat_detail). Pass the callable instead.
+  url(r'^download/(?P<catid>\d{1,15})$', 'download_cat_detail'),
+
+/opt/jrweb/jrweb/urls.py:20: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got news). Pass the callable instead.
+  url(r'^news/$', 'news'),
+
+/opt/jrweb/jrweb/urls.py:21: RemovedInDjango110Warning: Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got news_detail). Pass the callable instead.
+  url(r'^news/(?P<newsid>\d{1,15})$', 'news_detail'),
+
+/opt/jrweb/jrweb/urls.py:26: RemovedInDjango110Warning: django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+  url(r'^admin/', include(admin.site.urls)),
+
+System check identified some issues:
+
+WARNINGS:
+?: (1_8.W001) The standalone TEMPLATE_* settings were deprecated in Django 1.8 and the TEMPLATES dictionary takes precedence. You must put the values of the following settings into your default TEMPLATES dict: TEMPLATE_DIRS, TEMPLATE_CONTEXT_PROCESSORS.
+
+System check identified 1 issue (0 silenced).
+/opt/jrweb/app/views.py:11: RemovedInDjango110Warning: django.core.context_processors is deprecated in favor of django.template.context_processors.
+  from django.core.context_processors import csrf
+
+/usr/local/lib/python2.7/site-packages/django/shortcuts.py:45: RemovedInDjango110Warning: The context_instance argument of render_to_string is deprecated.
+  using=using)
+
+[12/Dec/2015 15:21:06] "GET / HTTP/1.1" 200 8209
+[12/Dec/2015 15:21:06] "GET /static/css/style.css HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/header_news.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/bullet.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/lef_dot.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/blank.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/banner_index.jpg HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/btn_more.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/footer.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/header_faqs.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/news.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/main/center_overview.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/ourproducts/header.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/ourproducts/footer.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:06] "GET /static/img/dot_white.gif HTTP/1.1" 304 0
+[12/Dec/2015 15:21:08] "GET /product HTTP/1.1" 200 5103
+[12/Dec/2015 15:21:13] "GET /static/img/banner_product.jpg HTTP/1.1" 200 779858
+[12/Dec/2015 15:21:19] "GET /product/3 HTTP/1.1" 200 6053
+[12/Dec/2015 15:21:19] "GET /product/static/img/blank.gif HTTP/1.1" 404 3536
+Unhandled exception in thread started by <function wrapper at 0x7f3371e27758>
+Performing system checks...
+
+
+You have unapplied migrations; your app may not work properly until they are applied.
+Run 'python manage.py migrate' to apply them.
+December 12, 2015 - 15:20:59
+Django version 1.9, using settings 'jrweb.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/django/utils/autoreload.py", line 226, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib/python2.7/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+    ipv6=self.use_ipv6, threading=threading)
+  File "/usr/local/lib/python2.7/site-packages/django/core/servers/basehttp.py", line 198, in run
+    httpd.serve_forever()
+  File "/usr/local/lib/python2.7/SocketServer.py", line 235, in serve_forever
+    r, w, e = _eintr_retry(select.select, [self], [], [],
+AttributeError: 'NoneType' object has no attribute 'select'

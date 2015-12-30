@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{{webname}}</title>
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<table>
+<table style="background-color:#FF6347" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="container">
+<tr>
+    <td align="left" valign="top" style="display:block;" id ="menu">
+    	<table width="100%" height="80">
+    		<tr>
+    			<td width="180">
+    			</td>
+				<td>
+				<li style= "list-style:none;font-size:35px;"><a href="/"><img src="/static/img/logo.png" width="300" height="50" /></a></li>
+				</td>
+    			<td>
+				 <ul id="menu">
+			 	     <li><a href="/"><b>首页</b></a></li>
+			         <li><a href="/product"><b>产品介绍</b></li>
+			    	 <li><a href="/service"><b>服务支持</b></a></li>
+			    	 <li><a href="/download"><b>资料下载</b></a></li>
+			    	 <li><a href="/faq"><b>常见问题</b></a></li>
+			    	 <li><a href="/about"><b>公司介绍</b></a></li>
+			    	</ul>
+				</td>
+				<td align="right" style="padding-right:20px;">
+				  <b> 联系人</b>&nbsp;: 刘先生
+    	          <b> 联系电话</b>&nbsp;: 18706696696
+				</td>
+			</tr> 
+    	</table>   	
+    </td>
+  </tr>
+</table>
+<table>
+	<td valign="top">
+	<table>
+		<td width="12" border="0" align="left" >
+			<!-- <a target=blank href="tencent://message/?uin=878173316&Site=http://123.56.68.35&Menu=yes">
+			<img border="0" SRC="http://wpa.qq.com/pa?p=1:878173316:7" alt="与QQ[878173316]聊天"></a> -->
+			<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=878173316&site=qq&menu=yes">
+			<img border="0" src="http://wpa.qq.com/pa?p=2:878173316:53" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
+		</td>
+	</table>
+	</td>
+	<td width="80">
+	</td>
+	<td>
+	<table width="1200" valign="top" border="0" align="center" cellpadding="0" cellspacing="0" class="container">
+		<tr>
+			<td height="243" align="center" valign="top">
+				{% block topAd %}
+	   
+				{% endblock %}
+			</td>
+	</tr>
+	<tr>
+		<td>
+		{% block main %}
+     
+		{% endblock %}
+		</td>
+	</tr>
+	<tr style="height:30px;">
+  
+	</tr>  
+	</table>
+	</td>
+</table>
+<table width="1200px" border="0" cellspacing="0" cellpadding="0" align="center" style="background-color: #272e31;">
+  <tr>
+    <td width="9"></td>
+    <td align="center">
+      <div style="margin-top:10px;margin-bottom:10px;">
+        <label class="mylink">科技产品系列:</label>
+        <a href="/product" class="mylink">空气净化器</a>&nbsp;
+		<a href="/product" class="mylink">家用纯水机</a>&nbsp;
+        <a href="/product" class="mylink">食品快速综合检测仪</a>&nbsp;
+        <a href="/product" class="mylink">土壤墒情检测仪</a>&nbsp;
+        <a href="/product" class="mylink">环保类仪器</a>&nbsp;
+        <a href="/product" class="mylink">实验室仪器</a>&nbsp;
+        <a href="/product" class="mylink">试剂耗材系列</a>&nbsp;
+        <br />
+        <label class="mylink"> Copyright @2015-2016 景睿科技 Limited. All Right Reserved.</label>&nbsp;
+		<br />
+		<label class="mylink"> 地址：潍坊市奎文区虞河路 </label>
+      </div>
+    </td>
+    <td align="right">
+	<script src="/static/js/counter.js"></script>
+	</td>
+	<br />
+    <td width="9"></td>
+  </tr>
+</table>
+</table>
+</body>
+</html>
