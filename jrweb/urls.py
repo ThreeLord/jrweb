@@ -1,5 +1,7 @@
-from django.conf.urls import include, url
 #coding:utf-8
+#Author Yusheng
+from django.conf.urls import include, url
+
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
